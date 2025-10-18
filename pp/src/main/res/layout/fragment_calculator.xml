@@ -1,0 +1,108 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_calculator_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculator"
+        android:textSize="24sp"
+        android:textColor="@color/light_blue"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_currency_inputs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_calculator_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <!-- From Currency Input -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingEnd="8dp">
+
+            <Spinner
+                android:id="@+id/spinner_from_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_blue" />
+
+            <EditText
+                android:id="@+id/et_from_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/amount"
+                android:inputType="numberDecimal"
+                android:textColor="@color/light_blue"
+                android:textColorHint="#80D6F7"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <!-- To Currency Input -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="8dp">
+
+            <Spinner
+                android:id="@+id/spinner_to_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_blue" />
+
+            <EditText
+                android:id="@+id/et_to_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/converted_amount"
+                android:inputType="numberDecimal"
+                android:textColor="@color/light_blue"
+                android:textColorHint="#80D6F7"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_conversion_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result: 1 USD = 2100 MMK"
+        android:textSize="18sp"
+        android:textColor="@color/light_blue"
+        app:layout_constraintTop_toBottomOf="@id/ll_currency_inputs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Ad Banner at the Bottom -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
