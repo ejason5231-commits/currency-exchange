@@ -1,0 +1,17 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_exchange_rates"
+        android:icon="@drawable/ic_exchange_rates"
+        android:title="@string/exchange_rates" />
+    <item
+        android:id="@+id/nav_gold_prices"
+        android:icon="@drawable/ic_gold_prices"
+        android:title="@string/gold_prices" />
+    <item
+        android:id="@+id/nav_calculator"
+        android:icon="@drawable/ic_calculator"
+        android:title="@string/calculator" />
+</menu>
+```
