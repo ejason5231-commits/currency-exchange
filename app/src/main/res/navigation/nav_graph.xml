@@ -1,0 +1,44 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_exchange_rates">
+
+    <fragment
+        android:id="@+id/nav_exchange_rates"
+        android:name="com.example.currencyexchange.ExchangeRatesFragment"
+        android:label="@string/exchange_rates">
+        <action
+            android:id="@+id/action_to_gold_prices"
+            app:destination="@id/nav_gold_prices" />
+        <action
+            android:id="@+id/action_to_calculator"
+            app:destination="@id/nav_calculator" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gold_prices"
+        android:name="com.example.currencyexchange.GoldPricesFragment"
+        android:label="@string/gold_prices">
+        <action
+            android:id="@+id/action_to_exchange_rates"
+            app:destination="@id/nav_exchange_rates" />
+        <action
+            android:id="@+id/action_to_calculator"
+            app:destination="@id/nav_calculator" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_calculator"
+        android:name="com.example.currencyexchange.CalculatorFragment"
+        android:label="@string/calculator">
+        <action
+            android:id="@+id/action_to_exchange_rates"
+            app:destination="@id/nav_exchange_rates" />
+        <action
+            android:id="@+id/action_to_gold_prices"
+            app:destination="@id/nav_gold_prices" />
+    </fragment>
+</navigation>
+```
