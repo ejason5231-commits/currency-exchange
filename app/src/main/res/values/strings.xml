@@ -1,0 +1,15 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Currency Exchange</string>
+    <string name="exchange_rates">Exchange Rates</string>
+    <string name="gold_prices">Gold Prices</string>
+    <string name="calculator">Calculate</string>
+    <string name="world_gold_price">World Gold Price</string>
+    <string name="myanmar_gold_prices">Myanmar Gold Prices</string>
+    <string name="sixteen_pae_yay">16 Pae Yay</string>
+    <string name="fifteen_pae_yay">15 Pae Yay</string>
+    <string name="amount">Amount</string>
+    <string name="converted_amount">Converted Amount</string>
+</resources>
+```
