@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iv_currency_flag"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Currency Flag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_currency_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USD"
+        android:textSize="18sp"
+        android:textColor="#4FC3F7"
+        app:layout_constraintStart_toEndOf="@id/iv_currency_flag"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tv_currency_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 USD = 2100 MMK"
+        android:textSize="16sp"
+        android:textColor="#4FC3F7"
+        app:layout_constraintStart_toEndOf="@id/iv_currency_flag"
+        app:layout_constraintTop_toBottomOf="@id/tv_currency_code"
+        android:layout_marginStart="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
