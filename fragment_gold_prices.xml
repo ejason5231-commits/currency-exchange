@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_gold_prices_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gold Prices"
+        android:textSize="24sp"
+        android:textColor="#4FC3F7"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_world_gold_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="World Gold Price: $1800/oz"
+        android:textSize="18sp"
+        android:textColor="#4FC3F7"
+        app:layout_constraintTop_toBottomOf="@id/tv_gold_prices_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tv_myanmar_gold_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Myanmar Gold Prices"
+        android:textSize="20sp"
+        android:textColor="#4FC3F7"
+        app:layout_constraintTop_toBottomOf="@id/tv_world_gold_price"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tv_16_pae_yay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16 Pae Yay: 2,500,000 MMK"
+        android:textSize="16sp"
+        android:textColor="#4FC3F7"
+        app:layout_constraintTop_toBottomOf="@id/tv_myanmar_gold_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tv_15_pae_yay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 Pae Yay: 2,300,000 MMK"
+        android:textSize="16sp"
+        android:textColor="#4FC3F7"
+        app:layout_constraintTop_toBottomOf="@id/tv_16_pae_yay"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
